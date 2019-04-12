@@ -10,6 +10,26 @@ public class Main
         System.out.println(" 3. Multiply ");
         System.out.println(" 4. Modulus  "); 
         System.out.println(" 5. Divide  ");     
+    } //static function call the static function
+    public static int sum(int a,int b)
+    {
+      return a+b;
+    }
+    public static int sub(int a,int b)
+    {
+      return a-b;
+    }
+    public static int mul(int a,int b)
+    {
+      return a*b;
+    }
+    public static int div(int a,int b)
+    {
+      return a/b;
+    }
+    public static int mol(int a,int b)
+    {
+      return a%b;
     }
     public static void main(String args[])
     {
@@ -30,8 +50,7 @@ public class Main
                 a = s.nextInt(); 
                 System.out.print("Enter the 2nd Number : ");
                 b = s.nextInt();
-                int sum = a+b;
-                 System.out.println("Sum : " + sum);
+                System.out.println("Sum is " + sum(a,b));
                 break;
             }
             case 2:
@@ -41,8 +60,7 @@ public class Main
                 a = s.nextInt(); 
                 System.out.print("Enter the 2nd Number : ");
                 b = s.nextInt();
-                  int sub = a-b;
-                 System.out.println("Subtraction : " + sub);
+                System.out.println("Subtract is " + sub(a,b));
                 break;
             }
             case 3:
@@ -52,8 +70,7 @@ public class Main
                 a = s.nextInt(); 
                 System.out.print("Enter the 2nd Number : ");
                 b = s.nextInt();
-                  int mul = a*b;
-                 System.out.println("Multiplation : " + mul);
+                System.out.println("Multiply is " + mul(a,b));
                 break;
             }
             case 4:
@@ -63,8 +80,7 @@ public class Main
                 a = s.nextInt(); 
                 System.out.print("Enter the 2nd Number : ");
                 b = s.nextInt();
-                  int mode = a%b;
-                 System.out.println("modulus : " + mode);
+                System.out.println("Modulas " + mol(a,b));
                 break;
             }
             case 5:
@@ -74,8 +90,7 @@ public class Main
                 a = s.nextInt(); 
                 System.out.print("Enter the 2nd Number : ");
                 b = s.nextInt();
-                  int divid = a/b;
-                 System.out.println("Divide : " + divid);
+                System.out.println("Divide " + div(a,b));
                 break;
             }
            default:
